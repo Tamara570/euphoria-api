@@ -1,5 +1,5 @@
 const knex = require('knex')
-const app = require('./app')
+const app = require('./src/app')
 
 const { PORT, DATABASE_URL } = require('./config')
 
@@ -9,5 +9,5 @@ const { PORT, DATABASE_URL } = require('./config')
     })
 
 app.listen(PORT, () => {
-    console.log('Server is working!')
+    //console.log('Server is working!')
 })
