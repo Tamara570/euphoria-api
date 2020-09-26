@@ -4,7 +4,7 @@ const registerRouter = express.Router()
 const bodyParser = express.json()
 
 
-registerRouter.post('/user', (req, res) => {
+registerRouter.post('/register', (req, res) => {
     const { fullname, username, password } = req.body;
 
     //missing name

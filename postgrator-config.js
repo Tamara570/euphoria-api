@@ -1,5 +1,4 @@
 require('dotenv').config();
-const knex = require('knex')
 
 module.exports = {
   "migrationsDirectory": "migrations",
