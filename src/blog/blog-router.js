@@ -17,7 +17,6 @@ const serializeBlog = (blog) => ({
 blogRouter
   .route('/')
   .get((req, res, next) => {
-      console.log('HIT ROUTE BLOG')
     blogService.getAllBlogs(req.app.get('db'))
       .then(blogs => {
           console.log('response', blogs)
@@ -46,8 +45,6 @@ blogRouter
             message: `Missing '${key}' in request body`,
           },
         });
-
-    console.log(newBlog)
 
 
     blogService.insertBlogs(req.app.get('db'), newBlog)
