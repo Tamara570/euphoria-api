@@ -1,3 +1,13 @@
+const cors = require('cors');
+const { CLIENT_ORIGIN } = require('../config');
+
+
+app.use(
+    cors({
+        origin: CLIENT_ORIGIN
+    })
+);
+
 function requireAuth(req, res, next) {
     const authToken = req.get('Authorization') || ''
 
