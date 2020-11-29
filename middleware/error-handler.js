@@ -10,5 +10,6 @@ module.exports = function errorHandler(error, req, res, next) {
             details: error
         })
 
+        
     res.status(500).json(response)
 }
